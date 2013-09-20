@@ -1,0 +1,65 @@
+body {
+    background-color: #eee;
+}
+
+.propertyContainer {
+    outline: 1px solid #aaa;
+    width: 350px;
+    height: 130px;
+    background-color: #fff;
+    float: left;
+    margin: 5px;
+}
+
+.propertyContainer img {
+    float: left;
+    margin: 10px;
+}
+
+.propertyContainer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.propertyContainer button {
+    float: right;
+    margin: 10px;
+}
+
+#addProperty label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 25px;
+}
+
+#addProperty label, #addProperty input {
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#addProperty label[for="title"], #addProperty label[for="releaseDate"] {
+    clear: both;
+}
+
+#addProperty button {
+    display: block;
+    margin: 5px 20px 10px 10px;
+    float: right;
+    clear: both;
+}
+
+#addProperty div {
+    width: 550px;
+}
+
+#addProperty div:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
