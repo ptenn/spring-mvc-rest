@@ -4,15 +4,38 @@
         <meta charset="UTF-8"/>
         <title>Backbone.js Property Site</title>
         <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/cupertino/jquery-ui-1.10.0.custom.css">
     </head>
+    <body>
+        <div id="properties">
+            <form id="addProperty" action="#">
+                <div>
+                    <label for="address1">Address 1: </label><input id="address1" type="text" />
+                    <label for="address2">Address 2: </label><input id="address2" type="text" />
+                    <label for="city">City: </label><input id="city" type="text" />
+                    <label for="state">State: </label><input id="state" type="text" />
+                    <label for="state">Zip: </label><input id="zip" type="text" />
+                    <button id="add">Add</button>
+                </div>
+            </form>
+        </div>
+        <script id="propertyTemplate" type="text/template">
+            <img src="<%= coverImage %>"/>
+            <ul>
+                <li><%= address1 %></li>
+                <li><%= address2 %></li>
+                <li><%= city %></li>
+                <li><%= state %></li>
+                <li><%= zip %></li>                
+            </ul>
+
+            <button class="delete">Delete</button>
+        </script>
         
     <body>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
-
-
-        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>        
         <script src="js/models/property.js"></script>
         <script src="js/collections/propertyList.js"></script>
         <script src="js/views/property.js"></script>

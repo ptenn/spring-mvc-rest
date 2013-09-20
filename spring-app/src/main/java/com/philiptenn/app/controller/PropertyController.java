@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.philiptenn.app.model.Property;
 
 @Controller
-@RequestMapping("/properties")
+@RequestMapping("properties")
 public class PropertyController {
 	
 	private MongoOperations mongoOperations;

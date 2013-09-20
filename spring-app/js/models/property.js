@@ -9,5 +9,6 @@ app.Book = Backbone.Model.extend({
         city: '',
         state: '',
         zip: ''
-    }
+    },
+	idAttribute: '_id'
 });
