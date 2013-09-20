@@ -103,8 +103,7 @@
         <configuration>
           <webResources>
             <resource>
-              <directory>css</directory>
-              <targetPath>css</targetPath>
+              <directory>static</directory>
             </resource>
           </webResources>
           <warName>${war.name}</warName>                    
